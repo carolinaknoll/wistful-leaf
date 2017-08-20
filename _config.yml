@@ -1,0 +1,47 @@
+port: 3000
+name:               "Wistful Leaf"
+description:        "Just a small blog about coding and everyday happenings."
+
+url:                "https://carolinaknoll.github.io/wistful-leaf"
+author:             "carolinaknoll"
+email:              "carolinasknoll@gmail.com"
+twitter:            "carolina_knoll"
+email:              "carolinasknoll@gmail.com"
+github:             "carolinaknoll"
+linkedin:           "carolinaknoll"
+
+disqus_shortname:   "carolinaknoll"
+
+profile_image:      "/assets/img/profile-image.jpg"
+
+paginate:           5
+paginate_path:      "/page:num/"
+
+baseurl:            ""
+permalink:          /:year/:month/:day/:title/
+
+markdown:           kramdown
+
+nav:
+  - name:           "About"
+    href:           "/about"
+
+sass:
+  style:            :compressed
+
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+gems:
+  - jekyll-paginate
