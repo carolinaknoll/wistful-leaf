@@ -1,6 +1,6 @@
 port: 3000
-name:               "Wistful Leaf"
-description:        "Just a small blog about coding and everyday happenings."
+title:              "Wistful Leaf"
+description:        "This blog has the purpose to soothe the daily challenges we face as new coders, and gently remind ourselves that everything will be okay."
 
 url:                "https://carolinaknoll.github.io/wistful-leaf"
 author:             "carolinaknoll"
@@ -17,7 +17,6 @@ profile_image:      "/assets/img/profile-image.jpg"
 paginate:           5
 paginate_path:      "/page:num/"
 
-baseurl:            "https://carolinaknoll.github.io/wistful-leaf"
 permalink:          /:year/:month/:day/:title/
 
 markdown:           kramdown
@@ -43,5 +42,5 @@ defaults:
     values:
       layout:       "post"
 
-gems:
+plugins:
   - jekyll-paginate

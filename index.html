@@ -3,7 +3,7 @@ layout: default
 ---
 <header class="bloghead">
   <h1 class="bloghead-title">
-    <a href="{{ site.url }}/">{{ site.name }}<span>&#39;s blog</span></a>
+    <a href="{{ site.url }}/">{{ site.title }}<span>&#39;s blog</span></a>
   </h1>
   <nav class="bloghead-nav">
     {% for nav in site.nav %}
@@ -31,11 +31,11 @@ layout: default
   {% if paginator.total_pages > 1 %}
     <div class="pages">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}"><</a>
       {% endif %}
 
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">></a>
+        <a href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">></a>
       {% endif %}
     </div>
     {% endif %}
