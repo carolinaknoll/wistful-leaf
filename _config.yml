@@ -17,7 +17,7 @@ profile_image:      "/assets/img/profile-image.jpg"
 paginate:           5
 paginate_path:      "/page:num/"
 
-baseurl:            ""
+baseurl:            "https://carolinaknoll.github.io/wistful-leaf"
 permalink:          /:year/:month/:day/:title/
 
 markdown:           kramdown
