@@ -18,7 +18,7 @@ layout: default
   {% else %} {% for post in paginator.posts %}
     <div class="post-list">
       <h2 class="post-title">
-        <a href="{{ post.url | prepend: site.url | replace: '//', '/' }}">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
       </h2>
       {% if post.description %}
         <p>{{ post.description }}</p>
